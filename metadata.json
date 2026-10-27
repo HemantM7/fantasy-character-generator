@@ -1,0 +1,6 @@
+{
+  "name": "Fantasy Character Generator",
+  "description": "Generate random fantasy characters with random names, classes, attributes, and gear.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
