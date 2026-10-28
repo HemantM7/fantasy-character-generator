@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/generate-portrait"
+  to = "/.netlify/functions/generate-portrait"
+  status = 200
+
+[[redirects]]
+  from = "/api/generate-backstory"
+  to = "/.netlify/functions/generate-backstory"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,25 +1,15 @@
-<<<<<<< HEAD
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Fantasy Character Generator
 
-# Run and deploy your AI Studio app
+## Run locally
 
-This contains everything you need to run your app locally.
+1. Install dependencies with `npm install`.
+2. Create `.env.local` in the project root and set `GEMINI_API_KEY` to your Gemini API key.
+3. Start the app with `npm run dev`.
 
-View your app in AI Studio: https://ai.studio/apps/5d785a32-7676-4eec-b519-305462027674
+## Deploy to Netlify
 
-## Run Locally
+1. Push the project to your Git provider and import it in Netlify.
+2. In **Site configuration → Environment variables**, add `GEMINI_API_KEY` with your Gemini API key. Make it available to Functions and the deploy contexts you use.
+3. Deploy the site. Netlify builds the frontend and deploys the API endpoints as Functions.
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-=======
-# fantasy-character-generator
-fantasy-character-generator fine one
->>>>>>> baff833ccf3b0d93f4823a70207fdfd88a6481e3
+Do not add the key to frontend variables such as `VITE_GEMINI_API_KEY`, commit it to the repository, or expose it in client-side code.
